@@ -23,10 +23,10 @@ http://humanzz.spaces.live.com/blog/cns!82322F9506CB0449!713.entry
 
 Setup
 =====
-	
+
 	ruby script/plugin install git://github.com/humanzz/method_cache.git
-	
-	
+
+
 Examples
 ========
 For caching instance methods
@@ -58,7 +58,7 @@ class User < ActiveRecord::Base
   caches_method :costy_method, :until => :midnight
 end
 
-:until also accepts Time and date objects but I'm considering removing until or have it 
+:until also accepts Time and date objects but I'm considering removing until or have it
 support things like :midnight because otherwise it would cause errors after the specified
 date or time have passed.
 
